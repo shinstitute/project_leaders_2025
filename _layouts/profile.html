@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<div class="profile-container">
+  <div class="profile-header">
+    {% if page.image %}
+      <img src="{{ page.image | relative_url }}" alt="{{ page.name }}" class="profile-image">
+    {% else %}
+      <div class="profile-image-placeholder">
+        <span>{{ page.name | slice: 0 | upcase }}</span>
+      </div>
+    {% endif %}
+    
+    <div class="profile-info">
+      <h1>{{ page.name }}</h1>
+      <h2>{{ page.title }}</h2>
+      <h3>{{ page.organization }}</h3>
+      
+      <div class="profile-links">
+        {% if page.email %}
+          <a href="mailto:{{ page.email }}" class="profile-link email">
+            📧 Email
+          </a>
+        {% endif %}
+        
+        {% if page.linkedin %}
+          <a href="{{ page.linkedin }}" class="profile-link linkedin" target="_blank">
+            💼 LinkedIn
+          </a>
+        {% endif %}
+        
+        {% if page.github %}
+          <a href="{{ page.github }}" class="profile-link github" target="_blank">
+            👨‍💻 GitHub
+          </a>
+        {% endif %}
+        
+        {% if page.website %}
+          <a href="{{ page.website }}" class="profile-link website" target="_blank">
+            🌐 Website
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  
+  <div class="profile-bio">
+    <h3>About</h3>
+    <p>{{ page.bio }}</p>
+  </div>
+  
+  <div class="profile-content">
+    {{ content }}
+  </div>
+  
+  <div class="profile-navigation">
+    <a href="{{ '/' | relative_url }}" class="back-link">← Back to All Profiles</a>
+  </div>
+</div>
