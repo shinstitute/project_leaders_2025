@@ -18,12 +18,9 @@ collections:
     output: true
     permalink: /profiles/:name/
 
-# Plugins for GitHub Pages
+# Basic plugins that work with GitHub Pages safe mode
 plugins:
   - jekyll-remote-theme
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
 
 # Exclude files from processing
 exclude:
@@ -36,6 +33,7 @@ exclude:
   - gemfiles/
   - node_modules/
   - "*.gemspec"
+  - scripts/
 
 # Site data
 author:
