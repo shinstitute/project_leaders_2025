@@ -1,0 +1,46 @@
+# Site configuration for GitHub Pages
+title: SHI Collaboration Profiles
+description: Profile pages for Sustainable Horizons Institute collaborators
+baseurl: "/shi-collab"
+url: "https://markcmiller86.github.io"
+
+# GitHub Pages configuration
+remote_theme: primer/github-pages
+
+# Jekyll configuration
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Collections for profile pages
+collections:
+  profiles:
+    output: true
+    permalink: /profiles/:name/
+
+# Plugins for GitHub Pages
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - node_modules/
+  - "*.gemspec"
+
+# Site data
+author:
+  name: SHI Collaboration
+  email: contact@example.com
+
+# Enable GitHub metadata
+github: [metadata]
