@@ -5,7 +5,7 @@ baseurl: "/shi-collab"
 url: "https://markcmiller86.github.io"
 
 # GitHub Pages configuration
-remote_theme: primer/github-pages
+remote_theme: pages-themes/primer@v0.6.0
 
 # Jekyll configuration
 markdown: kramdown
