@@ -21,9 +21,11 @@ def csv_to_profiles
   # Create profiles directory if it doesn't exist
   Dir.mkdir(profiles_dir) unless Dir.exist?(profiles_dir)
   
+  # Submission,Status,Name1,Name2,Email1,Institution,Title,Field,Topics,Abstract,Desired,Comments1,Special,Other,Comments2^M
+
   # Read CSV and create profile pages
   CSV.foreach(csv_file, headers: true) do |row|
-    name = row['name']
+    name = "#{row['Name1']}_#{row['Name2']}"
     next if name.nil? || name.strip.empty?
     
     slug = slugify(name)
@@ -32,11 +34,11 @@ def csv_to_profiles
     # Prepare front matter
     front_matter = {
       'layout' => 'profile',
-      'name' => row['name'],
-      'title' => row['title'],
-      'organization' => row['organization'],
-      'email' => row['email'],
-      'bio' => row['bio'],
+      'name' => "#{row['Name1']} #{row['Name2']}",
+      'organization' => row['Institution'],
+      'title' => row['Title'],
+      'topics' => row['Topics'],
+      'abstract' => row['Abstract'],
       'image' => row['image'],
       'linkedin' => row['linkedin'],
       'github' => row['github'],
