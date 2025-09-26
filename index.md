@@ -5,8 +5,6 @@ title: SHI Collaboration Profiles
 
 # {{ site.title }}
 
-Welcome to the Sustainable Horizons Institute collaboration profiles. Here you can find information about our collaborators, researchers, and contributors.
-
 ## Our Collaborators
 
 <div class="profiles-grid">
@@ -46,14 +44,3 @@ Welcome to the Sustainable Horizons Institute collaboration profiles. Here you c
 {% endfor %}
 </div>
 
-## About This Site
-
-This site is built with Jekyll and uses CSV data to automatically generate profile pages for each collaborator. The profiles are updated automatically when the CSV data file is modified.
-
-### Features
-
-- **Responsive Design**: Works on desktop and mobile devices
-- **CSV-Driven**: Profile data is managed in a simple CSV file
-- **GitHub Pages Compatible**: Automatically deploys with GitHub Pages
-- **SEO Friendly**: Includes meta tags and structured data
-- **Primer Theme**: Uses GitHub's Primer design system
