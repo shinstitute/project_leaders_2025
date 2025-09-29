@@ -10,7 +10,7 @@ def slugify(text)
 end
 
 def csv_to_profiles
-  csv_file = '_data/BE@US-RSE25 Profile Info - Sheet1.csv'
+  csv_file = '_data/profiles.csv'
   profiles_dir = '_profiles'
   
   unless File.exist?(csv_file)
@@ -21,11 +21,11 @@ def csv_to_profiles
   # Create profiles directory if it doesn't exist
   Dir.mkdir(profiles_dir) unless Dir.exist?(profiles_dir)
   
-  # Submission,Status,Name1,Name2,Email1,Institution,Title,Field,Topics,Abstract,Desired,Comments1,Special,Other,Comments2^M
+  # CSV columns: Submission,Status ,First,Last,Email,Institution,Department,Website,Citizenship Status,Academic Status,Title,Abstract ,Academic/Research Interests,Motivation,Additional Comments
 
   # Read CSV and create profile pages
   CSV.foreach(csv_file, headers: true) do |row|
-    name = "#{row['Name1']}_#{row['Name2']}"
+    name = "#{row['First']}_#{row['Last']}"
     next if name.nil? || name.strip.empty?
     
     slug = slugify(name)
@@ -33,8 +33,8 @@ def csv_to_profiles
     
     # Check for profile image using first_last_1 naming convention
     image_path = nil
-    first_name = row['Name1'].to_s.downcase.strip
-    last_name = row['Name2'].to_s.downcase.strip
+    first_name = row['First'].to_s.downcase.strip
+    last_name = row['Last'].to_s.downcase.strip
     
     ['jpg', 'jpeg', 'png'].each do |ext|
       potential_image = "assets/images/profiles/#{first_name}_#{last_name}_1.#{ext}"
@@ -47,19 +47,20 @@ def csv_to_profiles
     # Prepare front matter
     front_matter = {
       'layout' => 'profile',
-      'name' => "#{row['Name1']} #{row['Name2']}",
+      'name' => "#{row['First']} #{row['Last']}",
       'organization' => row['Institution'],
-      'title' => row['Title'],
-      'field' => row['Field'],
-      'topics' => row['Topics'],
-      'status' => row['Status'],
-      'abstract' => row['Abstract'],
-      'desired' => row['Desired'],
-      'email' => row['Email1'],
-      'image' => image_path,
-      'linkedin' => row['linkedin'],
-      'github' => row['github'],
-      'website' => row['website']
+      'department' => row['Department'],
+      'project_title' => row['Title'],
+      'status' => row['Status ']&.strip, # Note: CSV has trailing space
+      'abstract' => row['Abstract ']&.strip, # Note: CSV has trailing space
+      'academic_interests' => row['Academic/Research Interests'],
+      'motivation' => row['Motivation'],
+      'email' => row['Email'],
+      'citizenship_status' => row['Citizenship Status'],
+      'academic_status' => row['Academic Status'],
+      'additional_comments' => row['Additional Comments'],
+      'website' => row['Website'],
+      'image' => image_path
     }
     
     # Remove empty fields
@@ -88,8 +89,8 @@ def csv_to_profiles
 end
 
 def csv_to_yaml
-  csv_file = '_data/BE@US-RSE25 Profile Info - Sheet1.csv'
-  yaml_file = '_data/BE@US-RSE25 Profile Info - Sheet1.yml'
+  csv_file = '_data/profiles.csv'
+  yaml_file = '_data/profiles.yml'
   
   unless File.exist?(csv_file)
     puts "Error: #{csv_file} not found!"
