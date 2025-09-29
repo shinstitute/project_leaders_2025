@@ -37,7 +37,7 @@ def csv_to_profiles
     last_name = row['Last'].to_s.downcase.strip
     
     ['jpg', 'jpeg', 'png'].each do |ext|
-      potential_image = "assets/images/profiles/#{first_name}_#{last_name}_1.#{ext}"
+      potential_image = "assets/images/profiles/Letter-Number-Files/#{first_name}_#{last_name}_1.#{ext}"
       if File.exist?(potential_image)
         image_path = "/#{potential_image}"
         break
