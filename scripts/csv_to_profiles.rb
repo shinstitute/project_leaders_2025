@@ -10,7 +10,7 @@ def slugify(text)
 end
 
 def csv_to_profiles
-  csv_file = '_data/profiles.csv'
+  csv_file = '_data/BE@US-RSE25 Profile Info - Sheet1.csv'
   profiles_dir = '_profiles'
   
   unless File.exist?(csv_file)
@@ -88,8 +88,8 @@ def csv_to_profiles
 end
 
 def csv_to_yaml
-  csv_file = '_data/profiles.csv'
-  yaml_file = '_data/profiles.yml'
+  csv_file = '_data/BE@US-RSE25 Profile Info - Sheet1.csv'
+  yaml_file = '_data/BE@US-RSE25 Profile Info - Sheet1.yml'
   
   unless File.exist?(csv_file)
     puts "Error: #{csv_file} not found!"
