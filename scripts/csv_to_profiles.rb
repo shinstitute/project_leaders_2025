@@ -31,6 +31,19 @@ def csv_to_profiles
     slug = slugify(name)
     filename = "#{profiles_dir}/#{slug}.md"
     
+    # Check for profile image using first_last_1 naming convention
+    image_path = nil
+    first_name = row['Name1'].to_s.downcase.strip
+    last_name = row['Name2'].to_s.downcase.strip
+    
+    ['jpg', 'jpeg', 'png'].each do |ext|
+      potential_image = "assets/images/profiles/#{first_name}_#{last_name}_1.#{ext}"
+      if File.exist?(potential_image)
+        image_path = "/#{potential_image}"
+        break
+      end
+    end
+    
     # Prepare front matter
     front_matter = {
       'layout' => 'profile',
@@ -43,7 +56,7 @@ def csv_to_profiles
       'abstract' => row['Abstract'],
       'desired' => row['Desired'],
       'email' => row['Email1'],
-      'image' => row['image'],
+      'image' => image_path,
       'linkedin' => row['linkedin'],
       'github' => row['github'],
       'website' => row['website']
