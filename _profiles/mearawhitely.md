@@ -28,16 +28,11 @@ academic_status: 4-Year Undergraduate Student
 image: "/assets/images/profiles/Letter-Number-Files/meara_whitely_1.jpg"
 ---
 
-## Additional Information
+## Academic Interests
 
-Add additional details about Meara_Whitely here using markdown.
+My current research interests involve GNNs, particularly how to lower the memory usage and time allocation for their inference. I've been participating in this research for a couple of months now and the possibilities that I have yet to research are very exciting.
 
-### Skills & Expertise
+## Motivation
 
-- Add relevant skills
-- Add areas of expertise
-- Add specializations
+I am interested in attending this program because it seems like an amazing opportunity to share what I have been working on as well as support others and learn about some of the great research that is happening. While I was doing my internship at Berkeley National Lab, I was able to participate in their poster session which was a great experience. I look forward to possibly being able to have an experience like that again.
 
-### Recent Work
-
-Describe recent projects, publications, or achievements.

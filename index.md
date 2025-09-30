@@ -1,12 +1,9 @@
 ---
 layout: default
-title: SHI Collaboration Profiles
-description: Profile pages for Sustainable Horizons Institute collaborators
+title: SHI BE@US-RSE25 Participant Profiles
+description: Profile pages for Sustainable Horizons Institute BE@US-RSE25 participants 
 ---
-
-# SHI Collaboration Profiles
-
-## Our Collaborators
+## Our Participants
 
 <div class="profiles-grid">
 {% for profile in site.profiles %}
@@ -50,16 +47,3 @@ description: Profile pages for Sustainable Horizons Institute collaborators
 {% endfor %}
 </div>
 
-## About the Program
-
-The Sustainable Horizons Institute (SHI) Building Engagement program supports researchers and practitioners from underrepresented communities in attending conferences, workshops, and other professional development opportunities in the field of research software engineering and high-performance computing.
-
-### Program Goals
-
-- Foster diversity and inclusion in research software engineering
-- Support professional development opportunities
-- Build community connections and mentorship
-- Advance careers of underrepresented researchers
-- Strengthen the overall research software engineering ecosystem
-
-For more information about the program and how to get involved, please contact us.

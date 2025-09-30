@@ -39,18 +39,14 @@ email: lrodriguez62@miners.utep.edu
 citizenship_status: US Citizen
 academic_status: Master's Student
 website: https://www.linkedin.com/in/leonith-rodriguez/
+image: "/assets/images/profiles/Letter-Number-Files/leonith_rodriguez_2.jpg"
 ---
 
-## Additional Information
+## Academic Interests
 
-Add additional details about Leonith_Rodriguez here using markdown.
+I'm interested in data science and nuclear research. I believe nuclear physics research has been sped up and slowed down in the wrong chronological order, as we need clean energy and medical tools now more than ever. My goal is to be part of a beneficial change of the use of nuclear potential in an era that needs it. I'm very interested in the tools that data science can offer to all research fields, from AI to sorting algorithms. The intersection of mathematics and computer science amazes me.
 
-### Skills & Expertise
+## Motivation
 
-- Add relevant skills
-- Add areas of expertise
-- Add specializations
+Meeting leaders and experts on software focused on STEM fields is one of my greatest motivations for this conference. The opportunity of mentorship or advises from experts in their fields will help me shape better my career and life goals. I want to know more about cutting edge technologies and tools used to solve different situations in research, as I get lost when I try to look them up on my own. Meeting students from different places and sharing experiences will help me have a better understanding of current situations outside my usual community. I want to know better what my options will be after grad school and my service to the country.
 
-### Recent Work
-
-Describe recent projects, publications, or achievements.

@@ -40,16 +40,11 @@ academic_status: 4-Year Undergraduate Student
 image: "/assets/images/profiles/Letter-Number-Files/william_planic_1.jpg"
 ---
 
-## Additional Information
+## Academic Interests
 
-Add additional details about William_Planic here using markdown.
+My academic and research interests center on artificial intelligence, with a focus on mechanistic interpretability and deep learning. I am particularly interested in understanding decision-making processes of large neural networks along with their internal representations. Through this understanding I hope to make these systems more reliable and transparent. I am also interested in anonymization and data privacy techniques, focusing specifically on their integration into machine learning pipelines while maintaining model performance. My interests include exploring various methods such as synthetic data generation and differential privacy to safeguard data while enabling practical AI applications.
 
-### Skills & Expertise
+## Motivation
 
-- Add relevant skills
-- Add areas of expertise
-- Add specializations
+I am interested in attending the US-RSE25 conference through the Building Engagement program because I see it as a unique opportunity to learn and connect with the research software engineering community. Attending US-RSE25 would allow me to share my perspective from AI research while gaining insights from others who are also advancing RSE practices across various scientific domains. I am drawn to the community-building aspect of this program. As someone who is very early in their career, I want to develop connections with collaborations, peers, and mentors who share similar interests. Participating in US-RSE25 would help me grow as both a software engineer and a researcher while contributing to the shared goal of strengthening the RSE community.
 
-### Recent Work
-
-Describe recent projects, publications, or achievements.

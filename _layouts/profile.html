@@ -14,11 +14,15 @@ layout: default
     
     <div class="profile-info">
       <h1>{{ page.name }}</h1>
-      <h2>{{ page.title }}</h2>
-      <h3>Status: {{ page.status }}</h3>
-      <h3>{{ page.organization }}</h3>
-      <h3>{{ page.field }}</h3>
-      <h3>{{ page.topics }}</h3>
+      {% if page.project_title %}
+        <h2>{{ page.project_title }}</h2>
+      {% endif %}
+      {% if page.organization %}
+        <h3>{{ page.organization }}</h3>
+      {% endif %}
+      {% if page.department %}
+        <h3>{{ page.department }}</h3>
+      {% endif %}
       
       <div class="profile-links">
         {% if page.email %}
@@ -50,9 +54,18 @@ layout: default
   
   <div class="profile-bio">
     <h3>Abstract</h3>
-    <p>{{ page.abstract }}</p>
-    <h3>Desired Skils</h3>
-    <p>{{ page.desired }}</p>
+    {% if page.abstract and page.abstract != "" %}
+      <p>{{ page.abstract }}</p>
+    {% else %}
+      <p><em>N/A</em></p>
+    {% endif %}
+    
+    <h3>Project Title</h3>
+    {% if page.project_title and page.project_title != "" %}
+      <p>{{ page.project_title }}</p>
+    {% else %}
+      <p><em>N/A</em></p>
+    {% endif %}
   </div>
 
   <div class="profile-content">

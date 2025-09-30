@@ -72,18 +72,14 @@ motivation: 'As a graduate student deeply involved in creating software for scie
 email: abrarhossainhimself@gmail.com
 citizenship_status: F-1 Visa
 academic_status: Doctoral Student
+image: "/assets/images/profiles/Letter-Number-Files/abrar_hossain_2.jpg"
 ---
 
-## Additional Information
+## Academic Interests
 
-Add additional details about Abrar_Hossain here using markdown.
+My academic and research interests lie at the intersection of High-Performance Computing (HPC) systems software and machine learning, with a focus on creating solutions that enhance the efficiency, reliability, and sustainability of scientific computing. I am particularly interested in resource management and automation. My work involves developing intelligent, power-aware job schedulers like TARDIS, which uses Graph Neural Networks to reduce energy costs, and automated performance tuning frameworks like LASP, which applies multi-armed bandit algorithms to optimize applications on resource-constrained edge devices. These projects aim to make complex computational systems more autonomous and cost-effective. This focus extends to the unique challenges of edge computing for scientific applications. My internship at the National Center for Atmospheric Research (NCAR) involved designing private LoRa networks and implementing edge-ML models for real-time environmental data processing, demonstrating how HPC principles can be adapted to support distributed, data-intensive research. More recently, my interests have expanded to include HPC networking and data management. I am investigating congestion control in modern interconnects and developing novel, auction-based mechanisms for dynamic bandwidth allocation. My work at the National Center for Supercomputing Applications (NCSA) on network monitoring further reflects this interest in ensuring the underlying cyberinfrastructure is robust and observable.
 
-### Skills & Expertise
+## Motivation
 
-- Add relevant skills
-- Add areas of expertise
-- Add specializations
+As a graduate student deeply involved in creating software for scientific research, the US-RSE25 Building Engagement (BE) program represents a critical next step in my professional journey. My interest is threefold: to find my community, accelerate my career development, and learn how to contribute back effectively. First, the BE program offers a formal entry point into a community I already align with through my work. While my resume details projects like building data orchestrators at NCAR or developing power-aware HPC schedulers, I have approached these tasks from a computer science research perspective. The BE program would provide the context and network to reframe my identity as a Research Software Engineer. It offers a unique opportunity to connect with peers and professionals who share a passion for building high-quality, sustainable software for science, moving me from simply doing the work to being an active member of the RSE movement. Second, I am at a pivotal point in my academic career, transitioning into my PhD with the goal of working in a national lab or industry research setting. The BE program's focus on impacting a participant's career trajectory is incredibly appealing. The special events and direct engagement with established RSE professionals would provide invaluable mentorship on navigating a career outside the traditional tenure track. Learning from their experiences will help me strategically shape my doctoral research and professional skills to meet the real-world needs of the scientific community. Finally, my interest is not only in what I can gain but also in what I can contribute. My experience leading the ACM student chapter and mentoring undergraduate researchers has shown me the value of community-building. The BE program would immerse me in the culture and structure of US-RSE, teaching me how I can best apply my leadership and mentorship skills to support the organization's goals, particularly in outreach and fostering a more inclusive environment. In essence, the BE@US-RSE25 program is the ideal catalyst to transform my practical experience into a focused RSE identity, guide my career path, and empower me to become an active, engaged contributor to this vital community.
 
-### Recent Work
-
-Describe recent projects, publications, or achievements.

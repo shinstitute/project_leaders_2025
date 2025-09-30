@@ -37,18 +37,14 @@ additional_comments: As LSUA Math Club President, I lead STEM tutoring programs,
   and MATLAB, al. I am eager to leverage my leadership, technical skills, and process
   optimization expertise to contribute to engagements that shape history.
 website: https://www.linkedin.com/in/ashley-escude
+image: "/assets/images/profiles/Letter-Number-Files/ashley_escude_5.jpg"
 ---
 
-## Additional Information
+## Academic Interests
 
-Add additional details about Ashley_Escude here using markdown.
+I am pursuing a BS, double majoring in Computer Science, and Mathematics with a concentration in Data Science. I intend to continue my studies after receiving my undergraduate degree in Spring 2026. It is my longterm goal to work for a national laboratory, with a supercomputer, so that I can be a part of cutting edge, innovative research. Currently, I am participating in research on the photovoice/mentoring part of the NSF S-STEM scholar program at LSUA. I would love to participate in research projects on artificial intelligence, data science, and computational chemistry. Previous workshops held by SHI were very inspirational, and motivated me to work towards these goals.
 
-### Skills & Expertise
+## Motivation
 
-- Add relevant skills
-- Add areas of expertise
-- Add specializations
+I'm eager to attend this conference to connect with peers and grow my skillset.
 
-### Recent Work
-
-Describe recent projects, publications, or achievements.

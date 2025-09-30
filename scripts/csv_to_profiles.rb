@@ -31,16 +31,29 @@ def csv_to_profiles
     slug = slugify(name)
     filename = "#{profiles_dir}/#{slug}.md"
     
-    # Check for profile image using first_last_1 naming convention
+    # Check for profile image matching first_last pattern
     image_path = nil
     first_name = row['First'].to_s.downcase.strip
     last_name = row['Last'].to_s.downcase.strip
     
-    ['jpg', 'jpeg', 'png'].each do |ext|
-      potential_image = "assets/images/profiles/Letter-Number-Files/#{first_name}_#{last_name}_1.#{ext}"
-      if File.exist?(potential_image)
-        image_path = "/#{potential_image}"
-        break
+    # Look for any file that starts with first_last pattern
+    image_dir = "assets/images/profiles/Letter-Number-Files"
+    if Dir.exist?(image_dir)
+      # Try different combinations for multi-word and hyphenated names
+      name_combinations = [
+        "#{first_name}_#{last_name.gsub(/[\s-]/, '_')}",  # Replace spaces and hyphens with underscores
+        "#{first_name}_#{last_name.split(/[\s-]/).first}",  # First word of last name only
+        "#{first_name}_#{last_name.split(/[\s-]/).last}",   # Last word of last name only
+        "#{first_name}_#{last_name}"  # Original format (fallback)
+      ].uniq
+      
+      name_combinations.each do |name_pattern|
+        pattern = "#{name_pattern}_*"
+        matching_files = Dir.glob("#{image_dir}/#{pattern}.{jpg,jpeg,png}", File::FNM_CASEFOLD)
+        if matching_files.any?
+          image_path = "/#{matching_files.first}"
+          break
+        end
       end
     end
     
@@ -70,14 +83,18 @@ def csv_to_profiles
     content = "---\n"
     content += front_matter.to_yaml.gsub(/^---\n/, '')
     content += "---\n\n"
-    content += "## Additional Information\n\n"
-    content += "Add additional details about #{name} here using markdown.\n\n"
-    content += "### Skills & Expertise\n\n"
-    content += "- Add relevant skills\n"
-    content += "- Add areas of expertise\n"
-    content += "- Add specializations\n\n"
-    content += "### Recent Work\n\n"
-    content += "Describe recent projects, publications, or achievements.\n"
+    
+    # Add Academic Interests section if available
+    if front_matter['academic_interests'] && !front_matter['academic_interests'].strip.empty?
+      content += "## Academic Interests\n\n"
+      content += "#{front_matter['academic_interests']}\n\n"
+    end
+    
+    # Add Motivation section if available
+    if front_matter['motivation'] && !front_matter['motivation'].strip.empty?
+      content += "## Motivation\n\n"
+      content += "#{front_matter['motivation']}\n\n"
+    end
     
     # Write the file
     File.write(filename, content)

@@ -25,16 +25,11 @@ academic_status: 4-Year Undergraduate Student
 image: "/assets/images/profiles/Letter-Number-Files/carson_zoccole_1.jpg"
 ---
 
-## Additional Information
+## Academic Interests
 
-Add additional details about Carson_Zoccole here using markdown.
+My research interests mainly include learning more about computer and software engineering research, and all of the opportunities it can give me. My current research has focused on GNN's (graph neural networks) and helping to optimize them for our current problem with efficiency.
 
-### Skills & Expertise
+## Motivation
 
-- Add relevant skills
-- Add areas of expertise
-- Add specializations
+My mentor recently put this on my radar, and it piqued my interest. Many of the topics discussed are of interest to me and I am excited to potentially learn more about them.
 
-### Recent Work
-
-Describe recent projects, publications, or achievements.

@@ -35,16 +35,11 @@ citizenship_status: Permanent Resident
 academic_status: Doctoral Student
 ---
 
-## Additional Information
+## Academic Interests
 
-Add additional details about Areebah_Layne here using markdown.
+As a PhD student in Computer Science, my research focuses on AI, machine learning, and their applications in scalable, real-world systems. I am particularly interested in physical AI, Interpretability, multi-agent pathfinding (MAPF), reinforcement learning, and graph neural networks, and how these can be applied to decentralized coordination problems. My current work explores interpretable learning algorithms and hybrid neural-symbolic approaches that improve agent decision-making in constrained environments. I'm also deeply interested in LLM reliability, hallucination detection, and the role of structured data in enhancing the trustworthiness of retrieval-augmented generation systems.
 
-### Skills & Expertise
+## Motivation
 
-- Add relevant skills
-- Add areas of expertise
-- Add specializations
+Attending US-RSE25â€™s Building Engagement program offers a unique opportunity to strengthen the software backbone of my research. As someone working at the intersection of machine learning and systems, I see this conference as an ideal venue to build skills, community, and best practices in RSE. The mentorship and affinity group model especially appeals to me, as it fosters deep engagement and peer learning. I hope to bring back lessons on reproducibility, containerization, and user-focused design to my research group and broader academic community.
 
-### Recent Work
-
-Describe recent projects, publications, or achievements.

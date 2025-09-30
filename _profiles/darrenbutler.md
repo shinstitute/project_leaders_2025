@@ -52,16 +52,11 @@ website: https://darrendbutler.github.io/
 image: "/assets/images/profiles/Letter-Number-Files/darren_butler_1.jpg"
 ---
 
-## Additional Information
+## Academic Interests
 
-Add additional details about Darren_Butler here using markdown.
+Hi, Iâ€™m Ren. Have you ever felt good about sharing an idea with a group? Thatâ€™s psychological safety. Iâ€™m a PhD Student researching psychological safety in neurodiverse tech teams. Tech work is more than programming. Tech reflecting and collaborating, which involves interpersonal risk â€“ especially when the way you think and behave diverges from socially constructed norms. I design practices and AI agents that help team members value each otherâ€™s ideas, questions, concerns, and mistakes. I hope to empower teams to create technology that respects neurodivergence and intersecting identities.
 
-### Skills & Expertise
+## Motivation
 
-- Add relevant skills
-- Add areas of expertise
-- Add specializations
+I value community. I would benefit immensely from building connections and knowledge with other students, researchers, and practitioners who value the experiences of software engineers and end users, and wish to cultivate more usable software. In the short term, I intend to conduct studies where I design social technologies with neurodiverse engineers and technologies in universities and industry teams. Long term, I hope to continue in a role where I research or manage software engineering teams to develop practices and software that enhance team safety and software quality. I am excited to discuss what I've learned, my plans, and the questions I have from sessions with my affinity group. I am also going on the market for internships for next summer, and the conference would be an excellent networking opportunity.
 
-### Recent Work
-
-Describe recent projects, publications, or achievements.
