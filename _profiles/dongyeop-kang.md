@@ -3,7 +3,6 @@ layout: profile
 name: Dongyeop Kang
 first_name: Dongyeop
 last_name: Kang
-status: Accept Wave 2 (Unconfirmed)
 email: dongyeop@umn.edu
 institution: University of Minnesota
 department: Computer Science & Engineering

@@ -3,7 +3,6 @@ layout: profile
 name: Varun Kasireddy
 first_name: Varun
 last_name: Kasireddy
-status: Accept Wave 2 (Confirmed)
 email: vkasired@alumni.cmu.edu
 institution: Carnegie Mellon University
 department: Robotics

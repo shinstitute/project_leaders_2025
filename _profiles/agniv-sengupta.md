@@ -3,7 +3,6 @@ layout: profile
 name: Agniv Sengupta
 first_name: Agniv
 last_name: Sengupta
-status: Accept Wave 2 (Confirmed)
 email: agsengupta@ucsd.edu
 institution: University of California San Diego
 department: Scripps Institution of Oceanography

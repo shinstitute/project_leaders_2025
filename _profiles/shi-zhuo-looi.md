@@ -3,7 +3,6 @@ layout: profile
 name: Shi Zhuo Looi
 first_name: Shi Zhuo
 last_name: Looi
-status: Accept Wave 2 (Confirmed)
 email: looi@caltech.edu
 institution: California institute of technology
 department: Mathematics (Division of physics, mathematics and astronomy)

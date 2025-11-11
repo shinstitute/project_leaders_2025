@@ -3,7 +3,6 @@ layout: profile
 name: Zhe Zhang
 first_name: Zhe
 last_name: Zhang
-status: Accept Wave 2 (Confirmed)
 email: zhezhang@tamu.edu
 institution: Texas A&M University
 department: Geography

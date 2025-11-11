@@ -3,7 +3,6 @@ layout: profile
 name: Naeemul Hassan
 first_name: Naeemul
 last_name: Hassan
-status: Accept Wave 2 (Confirmed)
 email: nhassan@umd.edu
 institution: University of Maryland
 department: College of Information

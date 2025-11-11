@@ -3,7 +3,6 @@ layout: profile
 name: Axel Huebl
 first_name: Axel
 last_name: Huebl
-status: Accept (Unconfirmed)
 email: axelhuebl@lbl.gov
 institution: Lawrence Berkeley National Laboratory
 department: Accelerator Technology & Applied Physics

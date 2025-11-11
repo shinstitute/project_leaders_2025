@@ -3,7 +3,6 @@ layout: profile
 name: Steven Fernandes
 first_name: Steven
 last_name: Fernandes
-status: Accept Wave 2 (Confirmed)
 email: stevenfernandes@creighton.edu
 institution: Creighton University
 department: Computer Science, Design and Journalism

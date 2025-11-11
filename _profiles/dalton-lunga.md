@@ -3,7 +3,6 @@ layout: profile
 name: Dalton Lunga
 first_name: Dalton
 last_name: Lunga
-status: Accept Wave 2 (Unconfirmed)
 email: lungadd@ornl.gov
 institution: Oak Ridge National Laboratory
 department: Geospatial Science and Human Security

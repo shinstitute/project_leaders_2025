@@ -3,7 +3,6 @@ layout: profile
 name: Shu Hu
 first_name: Shu
 last_name: Hu
-status: Accept Wave 2 (Confirmed)
 email: hu968@purdue.edu
 institution: Purdue University
 department: School of Applied and Creative Computing

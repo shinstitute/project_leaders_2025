@@ -3,7 +3,6 @@ layout: profile
 name: Yang Liu
 first_name: Yang
 last_name: Liu
-status: Accept Wave 2 (Confirmed)
 email: y-liu@tamu.edu
 institution: Texas A&M University
 department: Department of Nuclear Engineering

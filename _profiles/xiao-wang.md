@@ -3,7 +3,6 @@ layout: profile
 name: Xiao Wang
 first_name: Xiao
 last_name: Wang
-status: Accept Wave 2 (Confirmed)
 email: xiaowangatpurdue@gmail.com
 institution: Oak Ridge National Laboratory
 photo: xiao_wang.jpg

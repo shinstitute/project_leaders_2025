@@ -3,7 +3,6 @@ layout: profile
 name: Haohan Wang
 first_name: Haohan
 last_name: Wang
-status: Accept Wave 2 (Confirmed)
 email: haohanw@illinois.edu
 institution: University of Illinois Urbana Champaign
 department: School of Information Sciences

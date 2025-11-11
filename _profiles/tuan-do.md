@@ -3,7 +3,6 @@ layout: profile
 name: Tuan Do
 first_name: Tuan
 last_name: Do
-status: Accept Wave 2 (Confirmed)
 email: tdo@astro.ucla.edu
 institution: UCLA
 photo: tuan_do.jpg

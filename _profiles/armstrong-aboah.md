@@ -3,7 +3,6 @@ layout: profile
 name: Armstrong Aboah
 first_name: Armstrong
 last_name: Aboah
-status: Accept Wave 2 (Confirmed)
 email: armstrong.aboah@ndsu.edu
 institution: North Dakota State University
 biography: I am an Assistant Professor at the North Dakota State University. An ingenious

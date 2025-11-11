@@ -52,13 +52,12 @@ def csv_to_profiles
     # Get actual photo filename based on name
     photo_filename = get_photo_filename(first_name, last_name)
     
-    # Prepare front matter - map all CSV columns except Submission
+    # Prepare front matter - map all CSV columns except Submission and Status
     front_matter = {
       'layout' => 'profile',
       'name' => name,
       'first_name' => first_name,
       'last_name' => last_name,
-      'status' => row['Status (This Stage)'],
       'email' => row['Email (first)'],
       'institution' => row['Company/Institution (first)'],
       'department' => row['Department (first)'],

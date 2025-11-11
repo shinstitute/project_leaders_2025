@@ -3,7 +3,6 @@ layout: profile
 name: Todd Gamblin
 first_name: Todd
 last_name: Gamblin
-status: Accept (Confirmed)
 email: tgamblin@llnl.gov
 institution: LLNL
 department: Livermore Computing

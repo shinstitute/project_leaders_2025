@@ -3,7 +3,6 @@ layout: profile
 name: Zhuangdi Zhu
 first_name: Zhuangdi
 last_name: Zhu
-status: Accept Wave 2 (Confirmed)
 email: zzhu24@gmu.edu
 institution: George Mason University
 website: http://zhuangdizhu.github.io/

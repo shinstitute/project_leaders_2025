@@ -3,7 +3,6 @@ layout: profile
 name: Yupeng Zhang
 first_name: Yupeng
 last_name: Zhang
-status: Accept Wave 2 (Confirmed)
 email: yupeng@alumni.caltech.edu
 institution: University of California, Los Angeles
 photo: yupeng_zhang.jpg

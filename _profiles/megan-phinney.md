@@ -3,7 +3,6 @@ layout: profile
 name: Megan Phinney
 first_name: Megan
 last_name: Phinney
-status: Accept (Confirmed)
 email: mphinney@lanl.gov
 institution: Los Alamos National Laboratory (LANL)
 biography: Megan earned a B.S. in computer engineering at Iowa State University in

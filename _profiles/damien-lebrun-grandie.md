@@ -3,7 +3,6 @@ layout: profile
 name: Damien Lebrun-Grandie
 first_name: Damien
 last_name: Lebrun-Grandie
-status: Accept (Confirmed)
 email: lebrungrandt@ornl.gov
 institution: ORNL
 website: https://www.ornl.gov/staff-profile/damien-lebrun-grandie

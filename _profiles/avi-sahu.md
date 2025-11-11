@@ -3,7 +3,6 @@ layout: profile
 name: Avi Sahu
 first_name: Avi
 last_name: Sahu
-status: Accept Wave 2 (Confirmed)
 email: asahu@salud.unm.edu
 institution: UNM Comprehensive Cancer Center
 department: Dept of Internal Medicine

@@ -3,7 +3,6 @@ layout: profile
 name: Reno Kriz
 first_name: Reno
 last_name: Kriz
-status: Accept Wave 2 (Confirmed)
 email: rkriz1@jhu.edu
 institution: Johns Hopkins University
 department: Human Language Technology Center of Excellence

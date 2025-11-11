@@ -3,7 +3,6 @@ layout: profile
 name: Yizhou Sun
 first_name: Yizhou
 last_name: Sun
-status: Accept Wave 2 (Unconfirmed)
 email: yzsun@cs.ucla.edu
 institution: UCLA
 department: CS

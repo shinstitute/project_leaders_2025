@@ -3,7 +3,6 @@ layout: profile
 name: Kenneth Moreland
 first_name: Kenneth
 last_name: Moreland
-status: Accept (Confirmed)
 email: morelandkd@ornl.gov
 institution: Oak Ridge National Laboratory (ORNL)
 website: https://www.kennethmoreland.com/

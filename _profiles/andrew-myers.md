@@ -3,7 +3,6 @@ layout: profile
 name: Andrew `Myers
 first_name: Andrew
 last_name: "`Myers"
-status: Accept (Confirmed)
 email: atmyers@lbl.gov
 institution: LBNL
 department: Applied Mathematics

@@ -3,7 +3,6 @@ layout: profile
 name: Edgar Lobaton
 first_name: Edgar
 last_name: Lobaton
-status: Accept Wave 2 (Confirmed)
 email: edgar.lobaton@ncsu.edu
 institution: North Carolina State University
 biography: Edgar J. Lobaton is a Professor in the Department of Electrical and Computer

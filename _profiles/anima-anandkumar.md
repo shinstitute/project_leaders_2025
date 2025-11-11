@@ -3,7 +3,6 @@ layout: profile
 name: Anima Anandkumar
 first_name: Anima
 last_name: Anandkumar
-status: Accept Wave 2 (Confirmed)
 email: anima@caltech.edu
 institution: Caltech
 department: Computing and Mathematical Sciences

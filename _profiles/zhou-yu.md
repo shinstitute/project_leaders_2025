@@ -3,7 +3,6 @@ layout: profile
 name: zhou yu
 first_name: zhou
 last_name: yu
-status: Accept Wave 2 (Unconfirmed)
 email: zy2461@columbia.edu
 institution: Columbia University
 photo: zhou_yu.jpg

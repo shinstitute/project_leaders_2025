@@ -23,10 +23,6 @@ layout: default
         <h3>{{ page.department }}</h3>
       {% endif %}
       
-      {% if page.status %}
-        <p class="status"><strong>Status:</strong> {{ page.status }}</p>
-      {% endif %}
-      
       <div class="profile-links">
         {% if page.website and page.website != "" %}
           <a href="{{ page.website }}" class="profile-link website" target="_blank">
