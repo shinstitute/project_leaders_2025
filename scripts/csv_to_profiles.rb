@@ -9,6 +9,22 @@ def slugify(text)
   text.to_s.downcase.strip.gsub(/[^a-z0-9\s-]/, '').gsub(/\s+/, '-').gsub(/-+/, '-')
 end
 
+def get_photo_filename(first_name, last_name)
+  # Convert name to expected filename format
+  name_slug = "#{first_name.downcase.strip.gsub(/\s+/, '_')}_#{last_name.downcase.strip.gsub(/\s+/, '_')}"
+  
+  # Check for common extensions in assets/staff_pictures
+  ['jpg', 'jpeg', 'png', 'gif'].each do |ext|
+    filename = "#{name_slug}.#{ext}"
+    if File.exist?("assets/staff_pictures/#{filename}")
+      return filename
+    end
+  end
+  
+  # Return nil if no photo found
+  return nil
+end
+
 def csv_to_profiles
   csv_file = '_data/profiles.csv'
   profiles_dir = '_profiles'
@@ -21,32 +37,43 @@ def csv_to_profiles
   # Create profiles directory if it doesn't exist
   Dir.mkdir(profiles_dir) unless Dir.exist?(profiles_dir)
   
-  # Submission,Status,Name1,Name2,Email1,Institution,Title,Field,Topics,Abstract,Desired,Comments1,Special,Other,Comments2^M
-
   # Read CSV and create profile pages
   CSV.foreach(csv_file, headers: true) do |row|
-    name = "#{row['Name1']}_#{row['Name2']}"
-    next if name.nil? || name.strip.empty?
+    # Skip Submission column - not needed for display
+    first_name = row['First/Given Names (first)']
+    last_name = row['Last/Family Name (first)']
     
+    next if first_name.nil? || last_name.nil? || first_name.strip.empty? || last_name.strip.empty?
+    
+    name = "#{first_name} #{last_name}"
     slug = slugify(name)
     filename = "#{profiles_dir}/#{slug}.md"
     
-    # Prepare front matter
+    # Get actual photo filename based on name
+    photo_filename = get_photo_filename(first_name, last_name)
+    
+    # Prepare front matter - map all CSV columns except Submission
     front_matter = {
       'layout' => 'profile',
-      'name' => "#{row['Name1']} #{row['Name2']}",
-      'organization' => row['Institution'],
-      'title' => row['Title'],
-      'field' => row['Field'],
-      'topics' => row['Topics'],
-      'status' => row['Status'],
-      'abstract' => row['Abstract'],
-      'desired' => row['Desired'],
-      'email' => row['Email1'],
-      'image' => row['image'],
-      'linkedin' => row['linkedin'],
-      'github' => row['github'],
-      'website' => row['website']
+      'name' => name,
+      'first_name' => first_name,
+      'last_name' => last_name,
+      'status' => row['Status (This Stage)'],
+      'email' => row['Email (first)'],
+      'institution' => row['Company/Institution (first)'],
+      'department' => row['Department (first)'],
+      'photo' => photo_filename,
+      'website' => row['Website (first)'],
+      'biography' => row['Biography (Maximum 200 words)'],
+      'project_title' => row['SRP Project Title (first)'],
+      'nairr_project' => row['What is the NAIRR Project Name? (first)'],
+      'hpsf_project' => row['What is the HPSF Project Name? (first)'],
+      'topical_areas' => row['Please select all the topical areas that apply to your project: (first)'],
+      'abstract' => row['Brief Abstract (200 words) (first)'],
+      'desired_skills' => row['Desired relevant skills, background, or interests (don\'t be too prescriptive) (first)'],
+      'comments' => row['Any other comments (first)'],
+      'lightning_talk_title' => row['Lightning Talk Title (Maximum 10 words)'],
+      'keywords' => row['Keywords (Maximum 20 words)']
     }
     
     # Remove empty fields
@@ -55,15 +82,7 @@ def csv_to_profiles
     # Create the profile page content
     content = "---\n"
     content += front_matter.to_yaml.gsub(/^---\n/, '')
-    content += "---\n\n"
-    content += "## Additional Information\n\n"
-    content += "Add additional details about #{name} here using markdown.\n\n"
-    content += "### Skills & Expertise\n\n"
-    content += "- Add relevant skills\n"
-    content += "- Add areas of expertise\n"
-    content += "- Add specializations\n\n"
-    content += "### Recent Work\n\n"
-    content += "Describe recent projects, publications, or achievements.\n"
+    content += "---\n"
     
     # Write the file
     File.write(filename, content)

@@ -4,8 +4,8 @@ layout: default
 
 <div class="profile-container">
   <div class="profile-header">
-    {% if page.image %}
-      <img src="{{ page.image | relative_url }}" alt="{{ page.name }}" class="profile-image">
+    {% if page.photo %}
+      <img src="{{ '/assets/staff_pictures/' | append: page.photo | relative_url }}" alt="{{ page.name }}" class="profile-image">
     {% else %}
       <div class="profile-image-placeholder">
         <span>{{ page.name | slice: 0 | upcase }}</span>
@@ -14,32 +14,21 @@ layout: default
     
     <div class="profile-info">
       <h1>{{ page.name }}</h1>
-      <h2>{{ page.title }}</h2>
-      <h3>Status: {{ page.status }}</h3>
-      <h3>{{ page.organization }}</h3>
-      <h3>{{ page.field }}</h3>
-      <h3>{{ page.topics }}</h3>
+      
+      {% if page.institution %}
+        <h2>{{ page.institution }}</h2>
+      {% endif %}
+      
+      {% if page.department %}
+        <h3>{{ page.department }}</h3>
+      {% endif %}
+      
+      {% if page.status %}
+        <p class="status"><strong>Status:</strong> {{ page.status }}</p>
+      {% endif %}
       
       <div class="profile-links">
-        {% if page.email %}
-          <a href="mailto:{{ page.email }}" class="profile-link email">
-            📧 Email
-          </a>
-        {% endif %}
-        
-        {% if page.linkedin %}
-          <a href="{{ page.linkedin }}" class="profile-link linkedin" target="_blank">
-            💼 LinkedIn
-          </a>
-        {% endif %}
-        
-        {% if page.github %}
-          <a href="{{ page.github }}" class="profile-link github" target="_blank">
-            👨‍💻 GitHub
-          </a>
-        {% endif %}
-        
-        {% if page.website %}
+        {% if page.website and page.website != "" %}
           <a href="{{ page.website }}" class="profile-link website" target="_blank">
             🌐 Website
           </a>
@@ -48,12 +37,75 @@ layout: default
     </div>
   </div>
   
-  <div class="profile-bio">
+  {% if page.biography %}
+  <div class="profile-section">
+    <h3>Biography</h3>
+    <p>{{ page.biography }}</p>
+  </div>
+  {% endif %}
+  
+  {% if page.project_title %}
+  <div class="profile-section">
+    <h3>SRP Project Title</h3>
+    <p><strong>{{ page.project_title }}</strong></p>
+  </div>
+  {% endif %}
+  
+  {% if page.nairr_project %}
+  <div class="profile-section">
+    <h3>NAIRR Project</h3>
+    <p>{{ page.nairr_project }}</p>
+  </div>
+  {% endif %}
+  
+  {% if page.hpsf_project %}
+  <div class="profile-section">
+    <h3>HPSF Project</h3>
+    <p>{{ page.hpsf_project }}</p>
+  </div>
+  {% endif %}
+  
+  {% if page.topical_areas %}
+  <div class="profile-section">
+    <h3>Topical Areas</h3>
+    <p>{{ page.topical_areas }}</p>
+  </div>
+  {% endif %}
+  
+  {% if page.abstract %}
+  <div class="profile-section">
     <h3>Abstract</h3>
     <p>{{ page.abstract }}</p>
-    <h3>Desired Skils</h3>
-    <p>{{ page.desired }}</p>
   </div>
+  {% endif %}
+  
+  {% if page.desired_skills %}
+  <div class="profile-section">
+    <h3>Desired Skills</h3>
+    <p>{{ page.desired_skills }}</p>
+  </div>
+  {% endif %}
+  
+  {% if page.comments %}
+  <div class="profile-section">
+    <h3>Additional Comments</h3>
+    <p>{{ page.comments }}</p>
+  </div>
+  {% endif %}
+  
+  {% if page.lightning_talk_title %}
+  <div class="profile-section">
+    <h3>Lightning Talk Title</h3>
+    <p><strong>{{ page.lightning_talk_title }}</strong></p>
+  </div>
+  {% endif %}
+  
+  {% if page.keywords %}
+  <div class="profile-section">
+    <h3>Keywords</h3>
+    <p>{{ page.keywords }}</p>
+  </div>
+  {% endif %}
 
   <div class="profile-content">
     {{ content }}
